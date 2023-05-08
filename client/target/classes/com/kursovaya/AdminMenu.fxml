@@ -26,7 +26,7 @@
          <image>
             <Image url="@old.jpg" />
          </image></ImageView>
-        <TitledPane animated="false" layoutY="40.0" prefWidth="359.0" style="-fx-content-display: LightSteelBlue;" text="Личные данные" AnchorPane.leftAnchor="0.0">
+        <TitledPane animated="false" layoutX="541.0" layoutY="39.0" prefHeight="206.0" prefWidth="359.0" style="-fx-content-display: LightSteelBlue;" text="Личные данные" AnchorPane.leftAnchor="541.0">
             <content>
                 <TabPane prefHeight="179.0" prefWidth="342.0" tabClosingPolicy="UNAVAILABLE">
                     <tabs>
@@ -63,53 +63,74 @@
                     </tabs>
                 </TabPane>
             </content>
+         <font>
+            <Font name="Serif Regular" size="14.0" />
+         </font>
         </TitledPane>
-      <Accordion layoutX="359.0" layoutY="65.0" prefHeight="181.0" prefWidth="359.0" AnchorPane.rightAnchor="182.0">
+      <Accordion layoutX="2.0" layoutY="64.0" prefHeight="181.0" prefWidth="359.0" AnchorPane.rightAnchor="538.8">
          <panes>
             <TitledPane animated="false" prefHeight="288.0" prefWidth="519.0" text="Удаление пользователя">
               <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="150.0" prefWidth="357.0" style="-fx-background-color: LightSteelBlue;">
                      <children>
-                        <Label layoutY="27.0" text="ВВЕДИТЕ ID УДАЛЯЕМОГО ПОЛЬЗОВАТЕЛЯ">
+                        <Label layoutY="29.0" text="ВВЕДИТЕ ID УДАЛЯЕМОГО ПОЛЬЗОВАТЕЛЯ">
                            <font>
                               <Font name="System Italic" size="13.0" />
                            </font>
                         </Label>
                         <TextField fx:id="idTextField" layoutX="267.0" layoutY="24.0" prefHeight="25.0" prefWidth="76.0" promptText="ID" />
-                        <Button layoutX="127.0" layoutY="61.0" mnemonicParsing="false" onAction="#DeleteUser" prefHeight="25.0" prefWidth="77.0" text="Удалить" />
+                        <Button layoutX="127.0" layoutY="61.0" mnemonicParsing="false" onAction="#DeleteUser" prefHeight="25.0" prefWidth="77.0" text="Удалить">
+                           <font>
+                              <Font name="Serif Regular" size="14.0" />
+                           </font></Button>
                      </children>
                   </AnchorPane>
               </content>
+               <font>
+                  <Font name="Serif Regular" size="14.0" />
+               </font>
             </TitledPane>
             <TitledPane animated="false" layoutX="10.0" layoutY="10.0" prefHeight="288.0" prefWidth="519.0" text="Блокировка пользователя">
                <content>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="150.0" prefWidth="357.0" style="-fx-background-color: LightSteelBlue;">
                      <children>
-                        <Label layoutY="27.0" text="ВВЕДИТЕ ID БЛОКИРУЕМОГО ПОЛЬЗОВАТЕЛЯ">
+                        <Label layoutX="12.0" layoutY="29.0" text="ВВЕДИТЕ ID БЛОКИРУЕМОГО ПОЛЬЗОВАТЕЛЯ">
                            <font>
                               <Font name="System Italic" size="12.0" />
                            </font>
                         </Label>
                         <TextField fx:id="idTextField1" layoutX="267.0" layoutY="24.0" prefHeight="25.0" prefWidth="76.0" promptText="ID" />
-                        <Button layoutX="127.0" layoutY="61.0" mnemonicParsing="false" onAction="#BlockUser" prefHeight="25.0" prefWidth="107.0" text="Заблокировать" />
+                        <Button layoutX="127.0" layoutY="61.0" mnemonicParsing="false" onAction="#BlockUser" prefHeight="25.0" prefWidth="107.0" text="Заблокировать">
+                           <font>
+                              <Font name="Serif Regular" size="14.0" />
+                           </font></Button>
                      </children>
                   </AnchorPane>
                </content>
+               <font>
+                  <Font name="Serif Regular" size="14.0" />
+               </font>
             </TitledPane>
             <TitledPane animated="false" layoutX="10.0" layoutY="35.0" prefHeight="288.0" prefWidth="519.0" text="Разблокировка пользователя">
                <content>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="150.0" prefWidth="357.0" style="-fx-background-color: LightSteelBlue;">
                      <children>
-                        <Label layoutY="27.0" text="ВВЕДИТЕ ID РАЗБЛОКИРУЕМОГО ПОЛЬЗОВАТЕЛЯ">
+                        <Label layoutX="4.0" layoutY="27.0" text="ВВЕДИТЕ ID РАЗБЛОКИРУЕМОГО ПОЛЬЗОВАТЕЛЯ">
                            <font>
-                              <Font name="System Italic" size="11.0" />
+                              <Font name="Serif Italic" size="12.0" />
                            </font>
                         </Label>
-                        <TextField fx:id="idTextField2" layoutX="267.0" layoutY="24.0" prefHeight="25.0" prefWidth="76.0" promptText="ID" />
-                        <Button layoutX="127.0" layoutY="61.0" mnemonicParsing="false" onAction="#UnblockUser" prefHeight="25.0" prefWidth="114.0" text="Разблокировать" />
+                        <TextField fx:id="idTextField2" layoutX="296.0" layoutY="20.0" prefHeight="27.0" prefWidth="53.0" promptText="ID" />
+                        <Button layoutX="127.0" layoutY="61.0" mnemonicParsing="false" onAction="#UnblockUser" prefHeight="25.0" prefWidth="114.0" text="Разблокировать">
+                           <font>
+                              <Font name="Serif Regular" size="14.0" />
+                           </font></Button>
                      </children>
                   </AnchorPane>
                </content>
+               <font>
+                  <Font name="Serif Regular" size="14.0" />
+               </font>
             </TitledPane>
          </panes>
       </Accordion>
@@ -130,14 +151,14 @@
                <graphic>
                     <Label alignment="TOP_CENTER" contentDisplay="CENTER" prefHeight="2.0" prefWidth="600.0" text="Меню администратора">
                         <font>
-                            <Font name="Calibri Italic" size="28.0" />
+                            <Font name="Serif Regular" size="28.0" />
                         </font>
                     </Label>
                </graphic>
           </Menu>
         </menus>
       </MenuBar>
-      <Accordion layoutX="-6.0" layoutY="245.0" prefHeight="423.0" prefWidth="906.0">
+      <Accordion layoutX="2.0" layoutY="253.0" prefHeight="423.0" prefWidth="900.0">
          <panes>
             <TitledPane animated="false" prefHeight="148.0" prefWidth="900.0" text="Просмотреть все автомобили">
                <content>
@@ -157,17 +178,20 @@
                      </children>
                   </AnchorPane>
                </content>
+               <font>
+                  <Font name="Serif Regular" size="14.0" />
+               </font>
             </TitledPane>
-            <TitledPane animated="false" layoutX="10.0" layoutY="35.0" prefHeight="147.0" prefWidth="900.0" text="Все пользователи">
+            <TitledPane animated="false" layoutX="10.0" layoutY="35.0" prefHeight="404.0" prefWidth="900.0" text="Все пользователи">
                <content>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="212.0" prefWidth="898.0" style="-fx-background-color: LightSteelBlue;">
                      <children>
-                        <TableView fx:id="allUsersTable" prefHeight="325.0" prefWidth="911.0" style="-fx-background-color: LightSteelBlue;">
+                        <TableView fx:id="allUsersTable" prefHeight="326.0" prefWidth="911.0" style="-fx-background-color: LightSteelBlue;">
                            <columns>
-                              <TableColumn fx:id="idColumn" prefWidth="213.99999237060547" text="ID" />
-                              <TableColumn fx:id="nameColumn" prefWidth="213.99999237060547" text="Имя" />
-                              <TableColumn fx:id="surnameColumn" prefWidth="262.0000305175781" text="Фамилия" />
-                              <TableColumn fx:id="mailColumn" minWidth="0.0" prefWidth="217.0" text="Почта" />
+                              <TableColumn fx:id="idColumn" prefWidth="130.39998775720596" text="ID" />
+                              <TableColumn fx:id="nameColumn" prefWidth="242.40005493164062" text="Имя" />
+                              <TableColumn fx:id="surnameColumn" prefWidth="168.79998779296875" text="Фамилия" />
+                              <TableColumn fx:id="mailColumn" minWidth="0.0" prefWidth="192.800048828125" text="Почта" />
                               <TableColumn fx:id="loginColumn" minWidth="0.0" prefWidth="217.0" text="Логин" />
                            </columns>
                            <columnResizePolicy>
@@ -177,8 +201,11 @@
                      </children>
                   </AnchorPane>
                </content>
+               <font>
+                  <Font name="Serif Regular" size="14.0" />
+               </font>
             </TitledPane>
-            <TitledPane animated="false" layoutX="10.0" layoutY="35.0" prefHeight="147.0" prefWidth="900.0" text="Все администраторы">
+            <TitledPane animated="false" layoutX="10.0" layoutY="35.0" prefHeight="321.0" prefWidth="892.0" text="Все администраторы">
                <content>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="212.0" prefWidth="898.0" style="-fx-background-color: LightSteelBlue;">
                      <children>
@@ -197,6 +224,9 @@
                      </children>
                   </AnchorPane>
                </content>
+               <font>
+                  <Font name="Serif Regular" size="14.0" />
+               </font>
             </TitledPane>
             <TitledPane animated="false" prefHeight="147.0" prefWidth="900.0" text="Входящие заявки на покупку">
                <content>
@@ -218,6 +248,9 @@
                      </children>
                   </AnchorPane>
                </content>
+               <font>
+                  <Font name="Serif Regular" size="14.0" />
+               </font>
             </TitledPane>
             <TitledPane animated="false" layoutX="10.0" layoutY="85.0" prefHeight="147.0" prefWidth="900.0" text="Принятые заявки на покупку">
                <content>
@@ -236,9 +269,15 @@
                      </children>
                   </AnchorPane>
                </content>
+               <font>
+                  <Font name="Serif Regular" size="14.0" />
+               </font>
             </TitledPane>
          </panes>
       </Accordion>
-      <Button layoutX="359.0" layoutY="40.0" mnemonicParsing="false" onAction="#AddAdmin" prefHeight="25.0" prefWidth="359.0" text="Добавление администратора" />
+      <Button layoutX="4.0" layoutY="39.0" mnemonicParsing="false" onAction="#AddAdmin" prefHeight="25.0" prefWidth="359.0" text="Добавление администратора">
+         <font>
+            <Font name="Serif Regular" size="14.0" />
+         </font></Button>
     </children>
 </AnchorPane>

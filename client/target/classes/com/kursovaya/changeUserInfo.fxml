@@ -36,22 +36,25 @@
                   <Label fx:id="passLabel" text="Пароль" textFill="WHITE" GridPane.rowIndex="3" />
                </children>
             </GridPane>
-            <Button fx:id="buttonApply" layoutX="94.0" layoutY="244.0" mnemonicParsing="false" onAction="#ApplyChanges" prefHeight="38.0" prefWidth="125.0" style="-fx-background-color: PaleGreen; -fx-border-color: black; -fx-border-radius: 333; -fx-background-radius: 222;" text="Сохранить">
+            <Button fx:id="buttonApply" layoutX="94.0" layoutY="244.0" mnemonicParsing="false" onAction="#ApplyChanges" prefHeight="38.0" prefWidth="125.0" style="-fx-background-color: #C62144; -fx-border-color: black; -fx-border-radius: 333; -fx-background-radius: 222;" text="Сохранить" textFill="WHITE">
                <font>
-                  <Font name="Calibri Italic" size="19.0" />
+                  <Font name="Serif Bold" size="19.0" />
                </font>
             </Button>
             <Label fx:id="header" alignment="CENTER" contentDisplay="CENTER" layoutX="7.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="38.0" prefWidth="312.0" text="Изменение персональных данных" textFill="WHITE">
                <font>
-                  <Font name="Calibri Italic" size="21.0" />
+                  <Font name="Serif Regular" size="21.0" />
                </font>
             </Label>
             <Label fx:id="subtitle" alignment="CENTER" contentDisplay="CENTER" layoutX="9.0" layoutY="28.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="38.0" prefWidth="312.0" text="Введите только то, что хотите изменить" textFill="WHITE">
                <font>
-                  <Font name="Calibri Italic" size="13.0" />
+                  <Font name="Serif Italic" size="12.0" />
                </font>
             </Label>
          </children></AnchorPane>
-      <Button fx:id="backButton" mnemonicParsing="false" onAction="#exitUserMenu" text="Вернуться" />
+      <Button fx:id="backButton" mnemonicParsing="false" onAction="#exitUserMenu" text="Вернуться">
+         <font>
+            <Font name="Serif Regular" size="12.0" />
+         </font></Button>
    </children>
 </AnchorPane>
